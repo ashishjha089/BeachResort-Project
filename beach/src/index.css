@@ -19,15 +19,15 @@
   }
 
   li {
-    @apply py-4 px-6
+    @apply py-4 px-6    
   }
 
   h1 {
-    @apply text-3xl md:text-4xl font-bold
+    @apply text-xl sm:text-xl md:text-4xl font-bold
   }
 
   h2 {
-    @apply text-3xl font-bold
+    @apply text-xl sm:text-2xl md:text-3xl py-4 font-bold
   }
 
   h3 {
@@ -45,3 +45,16 @@
   
 }
 
+@media (max-width: 768px) {
+  /* Styles for small devices */
+  .hero-content {
+    /* Adjust styles for small devices */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for medium devices */
+  .hero-content {
+    /* Adjust styles for medium devices */
+  }
+}
