@@ -19,7 +19,7 @@
   }
 
   li {
-    @apply py-4 px-10
+    @apply py-4 px-6
   }
 
   h1 {
@@ -40,6 +40,8 @@
     @apply text-2xl cursor-pointer
   }
 
+
+  
   
 }
 
