@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 
 const sliderData = [
@@ -24,8 +24,13 @@ const Carousel = () => {
         setSlide((prevSlide) => (prevSlide === sliderData.length - 1 ? 0 : prevSlide + 1));
     };
 
+    useEffect(() => {
+        const interval = setInterval(goToNextSlide, 3000); // Change slide every 3 seconds
+        return () => clearInterval(interval); // Clean up the interval when the component unmounts
+    }, []);
+
     return (
-        <div className="max-w-[1240px] mx-auto px-4 py-16 relative">
+        <div className="max-w-[1240px]  mx-auto px-4 py-16 relative">
             <BsArrowLeftSquareFill
                 className="absolute top-[50%] text-3xl md:text-4xl lg:text-5xl text-white cursor-pointer left-8 arrow"
                 onClick={goToPrevSlide}

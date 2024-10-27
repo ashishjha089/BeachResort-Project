@@ -4,7 +4,7 @@ import { MdTravelExplore } from "react-icons/md";
 
 const Services = () => {
     return(
-         <div className="max-w-[1240px]  mx-auto  grid  lg:grid-cols-3  gap-4  px-4 py-16 ">
+         <div className="max-w-[1240px]  mx-auto  grid  lg:grid-cols-3  gap-4  px-4  ">
             
             <div className="lg:col-span-2 flex  flex-col  justify-evenly ">
             <div>
@@ -53,7 +53,7 @@ const Services = () => {
                <form className="w-full ">
                 <div className="flex flex-col my-2">
                   <label>Destination</label>
-                  <select className="border rounded-md p-2">
+                  <select className="border rounded-md p-2 ">
                     <option>Goa</option>
                     <option>Kerala</option>
                     <option>Diu and Daman</option>
@@ -63,11 +63,11 @@ const Services = () => {
                 </div>
                 <div className="flex flex-col my-2">
                   <label>Check-in</label>
-                  <input type="date" className="border rounded-md p-2"/>
+                  <input type="date" className="border w-full  rounded-md p-2"/>
                 </div>
                 <div className="flex flex-col my-2">
                   <label>Check-out</label>
-                  <input type="date" className="border rounded-md p-2"/>
+                  <input type="date" className="border  w-full rounded-md p-2"/>
                 </div>
                 <button className="w-full my-4">Rate & Availableilities</button>
                </form>
